@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 2: Pengenalan AI dalam Pendidikan</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 2rem; }
+        .container { background-color: #fff; padding: 2rem; border-radius: 10px; max-width: 600px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; }
+        .question { margin-bottom: 1rem; }
+        .option-button { display: block; width: 100%; padding: 0.75rem; margin: 0.5rem 0; font-size: 1rem; border: none; border-radius: 5px; background-color: #007BFF; color: white; cursor: pointer; }
+        .option-button:hover { background-color: #0056b3; }
+        .feedback { margin-top: 2rem; padding: 1rem; background-color: #e9ecef; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bab 2: Pengenalan AI dalam Pendidikan</h1>
+        <div class="question">
+            <p><strong>Pertanyaan:</strong> Apa pengertian sederhana dari AI dalam konteks pendidikan?</p>
+            <button class="option-button" onclick="showFeedback('wrong')">A. AI adalah sistem untuk menyimpan data siswa secara digital.</button>
+<button class="option-button" onclick="showFeedback('wrong')">B. AI adalah alat bantu guru untuk mencetak soal dan laporan nilai.</button>
+<button class="option-button" onclick="showFeedback('correct')">C. AI adalah teknologi yang membantu guru membuat pembelajaran lebih personal dan interaktif.</button>
+<button class="option-button" onclick="showFeedback('wrong')">D. AI adalah aplikasi media sosial yang banyak digunakan siswa.</button>
+
+        </div>
+        <div class="feedback" id="feedback"></div>
+    </div>
+    <script>
+        function showFeedback(answer) {
+            const feedbackDiv = document.getElementById('feedback');
+            if(answer === 'correct') {
+                feedbackDiv.innerHTML = `<strong>Benar!</strong> Jawaban kamu tepat.`;
+            } else {
+                feedbackDiv.innerHTML = `<strong>Kurang tepat.</strong> Coba baca kembali bagian terkait di modul.`;
+            }
+        }
+    </script>
+</body>
+</html>
